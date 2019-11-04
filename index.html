@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<title>Queen</title>
+<script src="aframe.min.js"></script>
+<a-scene>
+  <a-assets>
+    <a-asset-item id="stage-obj" src="assets/stage.obj"></a-asset-item>
+    <a-asset-item id="stage-mtl" src="assets/stage.mtl"></a-asset-item>
+    <!-- <a-asset-item id="brian-may" src="assets/brian-may.png"></a-asset-item> -->
+    <!-- <a-asset-item id="crowd" src=""></a-asset-item> -->
+  </a-assets>
+
+  <a-entity position="0 2 -4">
+    <a-curvedimage
+      src="assets/crowd.png"
+      height="5.0"
+      theta-length="180"
+      radius="8"
+      rotation="0 90 0"
+    ></a-curvedimage>
+  </a-entity>
+
+  <a-obj-model
+    src="#stage-obj"
+    mtl="#stage-mtl"
+    scale="0.4 0.4 0.4"
+    position="0.5 0 -5"
+  ></a-obj-model>
+
+  <a-image src="assets/Queen-Logo.png"
+    position="0 3.5 -7"
+    height="2"
+    width="3"
+  ></a-image>
+
+  <a-image src="assets/roger-taylor.png"
+    position="0 1.6 -6"
+    height="1.5"
+    width="2"
+  ></a-image>
+
+  <a-image src="assets/brian-may.png"
+    position="-1.5 1.6 -5"
+    height="2"
+  ></a-image>
+
+  <a-image src="assets/john-deacon.png"
+    position="1.5 1.6 -5"
+    height="2"
+  ></a-image>
+
+  <a-image src="assets/freddie-mercury.png"
+    position="0 1.6 -4"
+    height="2"
+  ></a-image>
+
+  <a-sound src="src: url(assets/Queen - Good Old-Fashioned Lover Boy.mp3)"
+    position="0 2 -4"
+    autoplay="true"
+    loop="true"
+  ></a-sound>
+
+  <!-- <a-light type="ambient" color="#FFFFFF"></a-light> -->
+
+  <a-sky color="#448"></a-sky>
+</a-scene>
